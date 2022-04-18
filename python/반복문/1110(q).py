@@ -22,3 +22,4 @@ while True:
 # python visualizer(https://pythontutor.com/visualize.html#mode=display)
 # 의 도움을 받았다.
 # debug console을 이용해서 debug 할 수 있지 않을까?
+# 풀이과정을 주석달아주면 기억이 잘나서 설명 잘할수 있을듯
