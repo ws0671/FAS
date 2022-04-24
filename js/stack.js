@@ -7,33 +7,33 @@
 // 크게 리스트와 연결리스트로 구현이 가능하다.
 class Stack {
   constructor() {
-    this.storage = {};
-    this.top = 0;
+    this.storage = {}
+    this.top = 0
   }
   size() {
-    return this.top;
+    return this.top
   }
   push(element) {
-    this.storage[this.top] = element;
-    this.top += 1;
+    this.storage[this.top] = element
+    this.top += 1
   }
   pop() {
-    let temp;
+    let temp
     if (this.top > 0) {
-      temp = this.storage[this.top - 1];
+      temp = this.storage[this.top - 1]
       //top은 길이이기때문에 top -1 해야 인덱스가 나온다.
-      delete this.storage[this.top - 1];
-      this.top -= 1;
+      delete this.storage[this.top - 1]
+      this.top -= 1
     }
-    return temp;
+    return temp
   }
 }
 
-const stack = new Stack();
-stack.push("google");
-stack.push("daum");
-stack.push("naver");
-console.log(stack);
-console.log(stack.pop());
-console.log(stack.pop());
-console.log(stack.pop());
+const stack = new Stack()
+stack.push("google")
+stack.push("daum")
+stack.push("naver")
+console.log(stack)
+console.log(stack.pop())
+console.log(stack.pop())
+console.log(stack.pop())
