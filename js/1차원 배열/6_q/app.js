@@ -24,3 +24,4 @@ function solution(num) {
 }
 
 //array함수 map,forEach등은 문자열에 사용할 수 없다!
+//python 가능.

@@ -8,7 +8,7 @@ solution(input);
 function solution(input) {
   const arr = input.map((i) => +i);
   const result = arr.map((i) => i % 42);
-  const set = new Set(result);
+  const set = new Set(result); 
   const uniqueArr = [...set];
   console.log(uniqueArr.length);
 }
