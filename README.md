@@ -1,6 +1,6 @@
 # FreeAlgorithmStudy
 
-FAS의 문제풀이를 올려놓는 레포입니다.
+알고리즘 스터디 FAS의 문제풀이를 올려놓는 레포입니다.
 
 ## ✍️ Learning Stack
 
