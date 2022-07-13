@@ -1,9 +1,7 @@
 // 2447
 const fs = require("fs");
-const { start } = require("repl");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
-let input = fs.readFileSync(filePath).toString().split("\n");
-
+let input = fs.readFileSync(filePath).toString();
 solution(+input);
 
 function solution(num) {
