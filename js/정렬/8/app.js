@@ -7,7 +7,6 @@ solution(input);
 
 function solution(input) {
   const N = input.shift();
-
   let set = Array.from(new Set(input)); //set을 이용해 중복 없애기
   let sorted = set.sort((a, b) => a.length - b.length); // 길이가 짧은 것 순서대로 정렬
   let arr = [];
