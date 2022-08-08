@@ -1,4 +1,4 @@
-// 1181
+// 11651
 const fs = require("fs");
 const { join } = require("path");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
@@ -7,15 +7,13 @@ solution(input);
 
 function solution(input) {
   const N = input.shift();
-  let set = Array.from(new Set(input)); //set을 이용해 중복 없애기
-  let sorted = set.sort((a, b) => a.length - b.length); // 길이가 짧은 것 순서대로 정렬
-  let arr = [];
+  input = input.map((i) => i.split(" ").map(Number));
+  let sorted = input.sort((a, b) => {
+    if (a[1] === b[1]) return a[0] - b[0];
+    return a[1] - b[1];
+  });
 
-  //길이가 같으면 사전 순으로 정렬.
-  for (let i = 1; i <= sorted[sorted.length - 1].length; i++) {
-    let temp = sorted.filter((el) => el.length === i);
-    arr.push(...temp.sort());
-  }
-  console.log(arr.join("\n"));
-  //sort()를 그냥 사용하면 사전식 배열로 된다.
+  sorted = sorted.map((i) => i.join(" "));
+  sorted = sorted.join("\n");
+  console.log(sorted);
 }
