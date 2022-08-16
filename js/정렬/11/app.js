@@ -12,7 +12,6 @@ function solution(input) {
   let obj = {};
   let answer = "";
   sortedSet.forEach((e, index) => (obj[e] = index));
-  console.log(obj);
   for (let i = 0; i < n; i++) {
     answer += obj[startInput[i]] + " ";
   }
