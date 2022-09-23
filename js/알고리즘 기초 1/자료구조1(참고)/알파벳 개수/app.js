@@ -5,7 +5,7 @@ let input = fs.readFileSync(filePath).toString().trim();
 solution(input);
 
 function solution(input) {
-  const alpabet = {
+  const alphabet = {
     a: 0,
     b: 0,
     c: 0,
@@ -34,8 +34,8 @@ function solution(input) {
     z: 0,
   };
   for (let x of input) {
-    alpabet[x]++;
+    alphabet[x]++;
   }
-  let answer = Object.values(alpabet);
+  let answer = Object.values(alphabet);
   console.log(answer.join(" "));
 }
